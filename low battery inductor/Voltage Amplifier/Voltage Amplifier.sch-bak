@@ -1,0 +1,217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 64DDAC1A
+P 2100 4400
+F 0 "J1" H 2180 4392 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 2180 4301 50  0000 L CNN
+F 2 "" H 2100 4400 50  0001 C CNN
+F 3 "~" H 2100 4400 50  0001 C CNN
+	1    2100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 64DDD3BC
+P 6700 3650
+F 0 "J2" H 6780 3642 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6780 3551 50  0000 L CNN
+F 2 "" H 6700 3650 50  0001 C CNN
+F 3 "~" H 6700 3650 50  0001 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 64DDD5E6
+P 4200 3950
+F 0 "Q?" H 4390 3996 50  0000 L CNN
+F 1 "2N3904" H 4390 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4400 3875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4200 3950 50  0001 L CNN
+	1    4200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 64DDEAD2
+P 3300 3000
+F 0 "R1" H 3368 3046 50  0000 L CNN
+F 1 "1.1k" H 3368 2955 50  0000 L CNN
+F 2 "" H 3300 3000 50  0001 C CNN
+F 3 "~" H 3300 3000 50  0001 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 64DE05FE
+P 5050 3000
+F 0 "R3" H 5118 3046 50  0000 L CNN
+F 1 "4.7k" H 5118 2955 50  0000 L CNN
+F 2 "" H 5050 3000 50  0001 C CNN
+F 3 "~" H 5050 3000 50  0001 C CNN
+	1    5050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 64DE0FA3
+P 4650 4500
+F 0 "R4" H 4718 4546 50  0000 L CNN
+F 1 "470 ohm" H 4718 4455 50  0000 L CNN
+F 2 "" H 4650 4500 50  0001 C CNN
+F 3 "~" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 64DE2463
+P 3300 4500
+F 0 "R2" H 3368 4546 50  0000 L CNN
+F 1 "1k" H 3368 4455 50  0000 L CNN
+F 2 "" H 3300 4500 50  0001 C CNN
+F 3 "~" H 3300 4500 50  0001 C CNN
+	1    3300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 64DE28BF
+P 2650 3950
+F 0 "C1" V 2905 3950 50  0000 C CNN
+F 1 "17mf" V 2814 3950 50  0000 C CNN
+F 2 "" H 2688 3800 50  0001 C CNN
+F 3 "~" H 2650 3950 50  0001 C CNN
+	1    2650 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 64DE4A6F
+P 5700 3350
+F 0 "C2" V 5955 3350 50  0000 C CNN
+F 1 "10mf" V 5864 3350 50  0000 C CNN
+F 2 "" H 5738 3200 50  0001 C CNN
+F 3 "~" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 2900 3300 2700
+Wire Wire Line
+	5050 2700 5050 2900
+Wire Wire Line
+	3300 3100 3300 3950
+Wire Wire Line
+	3300 3950 4000 3950
+Wire Wire Line
+	4300 3750 4300 3350
+Wire Wire Line
+	4300 3350 5050 3350
+Wire Wire Line
+	5050 3100 5050 3350
+Connection ~ 5050 3350
+Wire Wire Line
+	5050 3350 5550 3350
+Wire Wire Line
+	4300 4150 4650 4150
+Wire Wire Line
+	4650 4150 4650 4400
+Connection ~ 3300 3950
+Wire Wire Line
+	3300 4000 3300 3950
+Wire Wire Line
+	3300 3950 3300 4400
+Wire Wire Line
+	2800 3950 3300 3950
+Wire Wire Line
+	1900 4400 1850 4400
+Wire Wire Line
+	1850 4400 1850 4200
+Wire Wire Line
+	1850 4200 2250 4200
+Wire Wire Line
+	2250 4200 2250 3950
+Wire Wire Line
+	2250 3950 2500 3950
+Wire Wire Line
+	1900 4500 1850 4500
+Wire Wire Line
+	1850 4500 1850 4700
+Wire Wire Line
+	1850 4700 2250 4700
+Wire Wire Line
+	2250 4700 2250 4900
+Wire Wire Line
+	2250 4900 3300 4900
+Wire Wire Line
+	3300 4900 3300 4600
+Wire Wire Line
+	4650 4600 4650 4900
+Wire Wire Line
+	4650 4900 4150 4900
+Connection ~ 3300 4900
+Wire Wire Line
+	5850 3350 6250 3350
+Wire Wire Line
+	6250 3350 6250 3650
+Wire Wire Line
+	6250 3650 6500 3650
+Wire Wire Line
+	6500 3750 6150 3750
+Wire Wire Line
+	6150 3750 6150 4900
+Wire Wire Line
+	6150 4900 4650 4900
+Connection ~ 4650 4900
+$Comp
+L power:Earth #PWR?
+U 1 1 64DEBB4A
+P 4150 4950
+F 0 "#PWR?" H 4150 4700 50  0001 C CNN
+F 1 "Earth" H 4150 4800 50  0001 C CNN
+F 2 "" H 4150 4950 50  0001 C CNN
+F 3 "~" H 4150 4950 50  0001 C CNN
+	1    4150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4950 4150 4900
+Connection ~ 4150 4900
+Wire Wire Line
+	4150 4900 3300 4900
+$Comp
+L power:+12V #PWR?
+U 1 1 64DEC9F6
+P 4300 2600
+F 0 "#PWR?" H 4300 2450 50  0001 C CNN
+F 1 "+12V" H 4315 2773 50  0000 C CNN
+F 2 "" H 4300 2600 50  0001 C CNN
+F 3 "" H 4300 2600 50  0001 C CNN
+	1    4300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2700 4300 2700
+Wire Wire Line
+	4300 2600 4300 2700
+Connection ~ 4300 2700
+Wire Wire Line
+	4300 2700 5050 2700
+$EndSCHEMATC
